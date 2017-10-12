@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <script type="text/javascript" src="../js/viewport-gaoqing.js"></script>
+
+    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="../css/music.css">
+    <script src="../js/swiper.js" charset="utf-8"></script>
+    <script src="../js/zepto.js" charset="utf-8"></script>
+    <script src="../js/touch.js" charset="utf-8"></script>
+    <title>音乐播放器</title>
+  </head>
+  <body>
+      <!--头部部分  -->
+      <header>
+        <div class="list_music">
+            <img src="../images/music_img_03.png" alt="图片">
+        </div>
+        <span class="my_span"></span>
+        <div class="music_title">
+            <span>NOW PLAYIMG</span>
+        </div>
+        <span class="my_span"></span>
+        <div class="music_agin">
+          <img src="../images/music_img_05.png" alt="图片">
+        </div>
+      </header>
+      <!-- 分界条 -->
+      <div class="fen_box">
+
+      </div>
+      <!-- banner部分 -->
+      <div class="banner">
+        <!-- 轮播图的样式 -->
+        <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../images/timg.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/timg (2).jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/timg (3).jpg" alt="">
+            </div>
+        </div>
+          <!-- 如果需要分页器 -->
+          <div class="swiper-pagination"></div>
+      </div>
+      <!-- 歌曲文字 -->
+      <div class="music_text">
+        <div class="music_text_title">Heartbeark - Extended VerSion</div>
+        <div class="music_text_name">kaney West</div>
+      </div>
+      <!-- 播放按钮 -->
+      <div class="play_box">
+          <div class="play_box_img">
+            <img src="../images/music_img_13.png" alt="图片" class="left_img">
+            <img src="../images/music_img_10.png" alt="图片" class="center_img">
+            <img src="../images/music_img_16.png" alt="图片" class="right_img">
+
+          </div>
+      </div>
+      <!--显示进度时间  -->
+      <div class="progress_time">
+        <span class="progress_time_left">00:00</span>
+        <span class="progress_time_right">-3.43</span>
+      </div>
+      <!-- 进度条的 -->
+      <div id="progress_tiao">
+        <span id="change_tiao"></span>
+        <div id="progress_img"></div>
+      </div>
+      <!-- 声音播放器的部分 -->
+      <div class="vulomn_box">
+        <div class="vulomn_box_left">
+          <img src="../images/music_img_22.png" alt="图片">
+        </div>
+        <span class="my_span_02"></span>
+        <div class="vulomn_box_banner">
+          <div class="short_box">
+            <img src="../images/music_img_24.png" alt="图片" class="vulomn_first" title="单曲循环">
+            <span id="vulomn_progress">
+              <i id="vulum_span"></i>
+            </span>
+
+            <span id="vulum_secod"></span>
+          </div>
+        </div>
+        <span class="my_span_02"></span>
+        <div class="vulomn_box_right">
+          <img src="../images/music_img_23.png" alt="图片">
+        </div>
+      </div>
+      <!-- 分割线 -->
+      <div class="fenge_box">
+
+      </div>
+      <!-- footer部分 -->
+      <footer>
+        <div class="yinyue footer_box">
+          <img src="../images/music_img_26.png" alt="图片" class="footer_img">
+          <div class="footer_text">Libary</div>
+        </div>
+        <div class="yuan footer_box">
+          <img src="../images/music_img_29.png" alt="图片" class="footer_img">
+          <div class="footer_text">Albums</div>
+        </div>
+        <div class="add footer_box">
+          <img src="../images/music_img_31.png" alt="图片" class="footer_img">
+          <div class="footer_text">Playlists</div>
+        </div>
+        <div class="sezhi footer_box">
+          <img src="../images/music_img_34.png" alt="图片" class="footer_img">
+          <div class="footer_text">Settings</div>
+        </div>
+      </footer>
+    </div>
+    <!-- 添加audio标签，考虑浏览器兼用问题 ：动态的插入-->
+  </body>
+  <script>
+    var mySwiper = new Swiper ('.swiper-container', {
+      direction:'horizontal',
+      autoplay:2000,
+      // 如果需要分页器
+      pagination: '.swiper-pagination'
+    })
+  </script>
+  <script src="../js/music.js" charset="utf-8"></script>
+</html>

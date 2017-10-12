@@ -1,0 +1,326 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body {
+  width: 100%;
+  overflow-y: hidden;
+}
+header {
+  width: 100%;
+  height: 1rem;
+  .list_music {
+    float: left;
+    width: 19.92%;
+    height:100%;
+    background: url('../images/music_img_03 (2).png') repeat-x;
+    background-size: 100% 100%;
+    position: relative;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 0.48rem;
+      height: 0.46rem;
+    }
+  }
+  .my_span {
+    display: inline-block;
+    float: left;
+    width:'';
+    height: 100%;
+    border: 0.08% solid #090c0e;
+  }
+
+  .music_title {
+    float: left;
+    width: 60%;
+    height:100%;
+    background: url('../images/music_img_03 (2).png') repeat-x;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      display: block;
+      font-size: 0.32rem;
+      color: #fefefe;
+    }
+  }
+  .music_agin {
+    float: left;
+    width:20.02%;
+    height: 100%;
+    background: url('../images/music_img_03 (2).png') repeat-x;
+    background-size: 100% 100%;
+    position: relative;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 0.48rem;
+      height: 0.46rem;
+    }
+  }
+};
+
+// 分割条
+.fen_box {
+  box-sizing: border-box;
+  width: 100%;
+  height: 0;
+  border: 2px solid #090c0e;
+  content: '';
+}
+// banner部分的样式
+.banner {
+  width: 100%;
+  height:10.4rem;
+  background: url('../images/music_img_06.png') repeat-x;
+  background-size: 100% 100%;
+  img {
+    width: 100%;
+    height: 3rem;
+  }
+}
+// 歌曲文字样式
+.music_text {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  .music_text_title {
+    color: #fefefe;
+    font-size: 0.25rem;
+    height: 50%;
+    line-height: 0.5rem;
+    text-align: center;
+  }
+  .music_text_name {
+    margin: 0 auto;
+    color: #fefefe;
+    font-size: 0.23rem;
+    height: 50%;
+    line-height: 0.5rem;
+    text-align: center;
+  }
+}
+// 播放器部分样式
+.play_box {
+  width: 100%;
+  height: 2rem;
+  .play_box_img {
+    margin: 0 auto;
+    width: 4.5rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url('../images/music_img_21.png') repeat-x;
+    background-size: 100% 100%;
+    .left_img {
+      width: 0.48rem;
+      height: 0.46rem;
+    }
+    .center_img {
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+    .right_img {
+      width: 0.48rem;
+      height: 0.46rem;
+    }
+  }
+};
+// 进度时间的样式
+.progress_time {
+  width: 100%;
+  height: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  span {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    color: #fefefe;
+    font-size: 0.25rem;
+  }
+  .progress_time_left {
+    color: #ebce8f;
+  }
+};
+// 进度条的样式
+#progress_tiao {
+  margin-top: 0.25rem;
+  width: 100%;
+  height: rem;
+  content: '';
+  border: 3px solid #6b7388;
+  position: relative;
+  #change_tiao {
+    position: absolute;
+    top:50%;
+    left: 0;
+    transform: translate(0,-50%);
+    display: block;
+    height: 0.06rem;
+    width: 0;
+    background-color:#ebce8f;
+    z-index: 10;
+  }
+  #progress_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    height: 0.28rem;
+    width: 0.26rem;
+    background: url('../images/music_img_11.png') no-repeat;
+    background-size: 100% 100%;
+    z-index: 11;
+  }
+};
+// 声音播放器的部分样式
+.vulomn_box {
+  width: 100%;
+  height: 1rem;
+  margin-top: 0.4rem;
+  .vulomn_box_left{
+    float: left;
+    width: 19.92%;
+    height:100%;
+    background: url('../images/music_img_14.png') repeat-x;
+    background-size: 100% 100%;
+    position: relative;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 0.48rem;
+      height: 0.32rem;
+    }
+  };
+  .my_span_02 {
+    display: block;
+    float: left;
+    width:'';
+    height: 100%;
+    border: 0.08% solid #fff;
+  }
+  .vulomn_box_banner {
+    float: left;
+    width: 60%;
+    height:100%;
+    background: url('../images/music_img_14.png') repeat-x;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .short_box {
+      width: 4rem;
+      height: 0.6rem;
+      border: 2px solid #000;
+      position: relative;
+      display: flex;
+      align-items: center;
+      vertical-align: middle;
+      .vulomn_first {
+        width: 0.32rem;
+        height: 0.46rem;
+        margin-left: 0.2rem;
+        margin-right: 0.1rem;
+        float: left;
+        display: inline-block;
+      }
+      #vulum_secod {
+        position: absolute;
+        top: 50%;
+        left: 24%;
+        transform: translate(-50%,-50%);
+        display: inline-block;
+        width: 0.54rem;
+        height: 0.34rem;
+        background: url('../images/music_img_27.png') no-repeat;
+        background-size: 100% 100%;
+      }
+      #vulum_span {
+        position: absolute;
+        top:50%;
+        left: 0;
+        transform: translate(0,-50%);
+        height: 0.06rem;
+        width: 0;
+        content: '';
+        display: inline-block;
+        background-color: #ebce8f;
+      }
+      #vulomn_progress {
+        position: relative;
+        float: left;
+        width: 2.6rem;
+        height: '';
+        content: '';
+        border: 4px solid #6b7388;
+        display: inline-block;
+      }
+    }
+  }
+  .vulomn_box_right {
+    float: left;
+    width:20.02%;
+    height: 100%;
+    background: url('../images/music_img_14.png') repeat-x;
+    background-size: 100% 100%;
+    position: relative;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 0.48rem;
+      height: 0.26rem;
+    }
+  }
+};
+// 分割线的 样式
+.fenge_box {
+  width: 100%;
+  height: 0.5rem;
+  background: url('../images/music_img_18.png') no-repeat;
+  background-size: 100% 100%;
+}
+// footer部分的样式
+footer {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: url('../images/music_img_21.png') repeat-x;
+  background-size: 100% 100%;
+ .footer_box {
+   height: 100%;
+   line-height: 100%;
+   .footer_img {
+     display: block;
+     width: 0.48rem;
+     height: 0.508rem;
+     margin-top:0.3rem;
+     margin-bottom: 0.1rem;
+     margin-left: 50%;
+     transform: translate(-50%,0);
+   }
+   .footer_text {
+     color: #fff;
+     font-size: 0.25rem;
+      height: 0.25rem;
+     line-height: 0.25rem;
+     text-align: center;
+   }
+ }
+
+}
